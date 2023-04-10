@@ -1,0 +1,57 @@
+
+
+project:
+  type: website
+  title: "Julia Workshop, ISCB 2022, Madison"
+  execute-dir: project
+  output-dir: docs
+  render: 
+      - index.qmd
+      - intro.qmd
+      - about.qmd
+
+
+website:
+  title: "კვლევის მეთოდების კურსი"
+
+  repo-actions: [issue]
+  navbar:
+    background: primary
+    left:
+      - href: index.qmd
+        text: კურსი
+      - about.qmd
+  
+
+
+
+    right:
+      - icon: github
+        href: https://github.com/Temurgugu/researchmethods
+  sidebar:
+    style: "docked"
+    search: true
+    contents:
+      - index.qmd
+      - intro.qmd
+
+  page-navigation: true
+
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+  pdf:
+    documentclass: scrreprt
+    
+callout-appearance: simple
+
+date: today
+date-format: iso
+
+
+
+editor: visual
+
